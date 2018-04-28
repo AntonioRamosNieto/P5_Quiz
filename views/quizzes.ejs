@@ -1,0 +1,14 @@
+<h1>
+    Lista de Quizzes
+</h1>
+
+<table>
+    <% for (var i in quizzes) { %>
+    <% var quiz = quizzes[i]; %>
+    <tr>
+        <td>
+            <p><%= quiz.question %>?:  <%= quiz.answer%></p>
+        </td>
+    </tr>
+    <% } %>
+</table>
